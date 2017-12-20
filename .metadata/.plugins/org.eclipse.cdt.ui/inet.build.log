@@ -1,0 +1,25 @@
+15:04:25 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/object/Polygon.cc
+inet/common/geometry/shape/Cuboid.cc
+inet/common/geometry/shape/Prism.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+
+15:04:30 Build Finished (took 4s.771ms)
+

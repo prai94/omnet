@@ -1,0 +1,6 @@
+21:28:52 **** Incremental Build of configuration release for project tictoe2 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+21:28:52 Build Finished (took 222ms)
+

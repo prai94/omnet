@@ -1,0 +1,13 @@
+15:04:37 **** Incremental Build of configuration debug for project tictoe1 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoe1_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoe1_dbg' failed
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoe1_dbg] Error 1
+
+15:04:37 Build Finished (took 320ms)
+

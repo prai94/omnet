@@ -1,0 +1,1029 @@
+00:22:22 **** Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+Creating precompiled header for gcc...
+MSGC: inet/applications/dhcp/DHCPMessage.msg
+MSGC: inet/applications/ethernet/EtherApp.msg
+MSGC: inet/applications/base/ApplicationPacket.msg
+MSGC: inet/applications/httptools/common/HttpEventMessages.msg
+MSGC: inet/applications/netperfmeter/NetPerfMeter.msg
+MSGC: inet/applications/httptools/common/HttpMessages.msg
+MSGC: inet/applications/pingapp/PingPayload.msg
+MSGC: inet/applications/packetdrill/PacketDrillInfo.msg
+MSGC: inet/applications/tcpapp/GenericAppMsg.msg
+MSGC: inet/applications/voip/SimpleVoIPPacket.msg
+MSGC: inet/common/ByteArray.msg
+MSGC: inet/common/RawPacket.msg
+MSGC: inet/common/TLVOption.msg
+MSGC: inet/common/queue/PacketQueue.msg
+MSGC: inet/environment/common/Material.msg
+MSGC: inet/environment/common/PhysicalObject.msg
+MSGC: inet/linklayer/base/MACFrameBase.msg
+MSGC: inet/linklayer/bmac/BMacFrame.msg
+MSGC: inet/linklayer/common/Ieee802Ctrl.msg
+MSGC: inet/linklayer/csma/CSMAFrame.msg
+MSGC: inet/linklayer/common/SimpleLinkLayerControlInfo.msg
+MSGC: inet/linklayer/csmaca/CsmaCaMacFrame.msg
+MSGC: inet/linklayer/ethernet/EtherFrame.msg
+MSGC: inet/linklayer/ieee80211/mac/Ieee80211Frame.msg
+MSGC: inet/linklayer/ideal/IdealMacFrame.msg
+MSGC: inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg
+MSGC: inet/linklayer/ieee80211/mgmt/Ieee80211Primitives.msg
+MSGC: inet/linklayer/ieee8021d/common/Ieee8021dBPDU.msg
+MSGC: inet/linklayer/lmac/LMacFrame.msg
+MSGC: inet/linklayer/ppp/PPPFrame.msg
+MSGC: inet/networklayer/arp/ipv4/ARPPacket.msg
+MSGC: inet/networklayer/base/NetworkDatagramBase.msg
+MSGC: inet/networklayer/common/EchoPacket.msg
+MSGC: inet/networklayer/common/InterfaceEntry.msg
+MSGC: inet/networklayer/common/IPProtocolId.msg
+MSGC: inet/networklayer/common/SimpleNetworkProtocolControlInfo.msg
+MSGC: inet/networklayer/contract/NetworkProtocolCommand.msg
+MSGC: inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg
+MSGC: inet/networklayer/contract/ipv4/IPv4ControlInfo.msg
+MSGC: inet/networklayer/diffserv/DSCP.msg
+MSGC: inet/networklayer/contract/ipv6/IPv6ControlInfo.msg
+MSGC: inet/networklayer/flood/FloodDatagram.msg
+MSGC: inet/networklayer/generic/GenericDatagram.msg
+MSGC: inet/networklayer/icmpv6/ICMPv6Message.msg
+MSGC: inet/networklayer/icmpv6/IPv6NDMessage.msg
+MSGC: inet/networklayer/ipv4/ICMPMessage.msg
+MSGC: inet/networklayer/ipv4/IGMPMessage.msg
+MSGC: inet/networklayer/ipv4/IPv4Datagram.msg
+MSGC: inet/networklayer/ipv6/IPv6Datagram.msg
+MSGC: inet/networklayer/ipv6/IPv6ExtensionHeaders.msg
+MSGC: inet/networklayer/ipv4/IPv4Route.msg
+MSGC: inet/networklayer/ldp/LDPPacket.msg
+MSGC: inet/networklayer/probabilistic/ProbabilisticBroadcastDatagram.msg
+MSGC: inet/networklayer/rsvp_te/IntServ.msg
+MSGC: inet/networklayer/rsvp_te/RSVPPathMsg.msg
+MSGC: inet/networklayer/rsvp_te/RSVPPacket.msg
+MSGC: inet/networklayer/rsvp_te/RSVPHello.msg
+MSGC: inet/networklayer/rsvp_te/RSVPResvMsg.msg
+MSGC: inet/networklayer/rsvp_te/SignallingMsg.msg
+MSGC: inet/networklayer/ted/LinkStatePacket.msg
+MSGC: inet/networklayer/ted/TED.msg
+MSGC: inet/networklayer/xmipv6/MobilityHeader.msg
+MSGC: inet/networklayer/wiseroute/WiseRouteDatagram.msg
+MSGC: inet/physicallayer/analogmodel/packetlevel/ScalarTransmission.msg
+MSGC: inet/physicallayer/base/packetlevel/FlatTransmissionBase.msg
+MSGC: inet/physicallayer/apskradio/bitlevel/APSKPhyFrame.msg
+MSGC: inet/physicallayer/base/packetlevel/NarrowbandTransmissionBase.msg
+MSGC: inet/physicallayer/contract/packetlevel/RadioControlInfo.msg
+MSGC: inet/physicallayer/base/packetlevel/TransmissionBase.msg
+MSGC: inet/physicallayer/ieee80211/bitlevel/Ieee80211OFDMPLCPFrame.msg
+MSGC: inet/physicallayer/idealradio/IdealTransmission.msg
+MSGC: inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg
+MSGC: inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg
+MSGC: inet/routing/aodv/AODVControlPackets.msg
+MSGC: inet/routing/bgpv4/BGPCommon.msg
+MSGC: inet/routing/bgpv4/BGPMessage/BGPASPathSegment.msg
+MSGC: inet/routing/bgpv4/BGPMessage/BGPKeepAlive.msg
+MSGC: inet/routing/bgpv4/BGPMessage/BGPOpen.msg
+MSGC: inet/routing/bgpv4/BGPMessage/BGPHeader.msg
+MSGC: inet/routing/bgpv4/BGPMessage/BGPUpdate.msg
+MSGC: inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg
+MSGC: inet/routing/dymo/DYMO.msg
+MSGC: inet/routing/gpsr/GPSR.msg
+MSGC: inet/routing/ospfv2/OSPFPacket.msg
+MSGC: inet/routing/pim/PIMPacket.msg
+MSGC: inet/routing/rip/RIPPacket.msg
+MSGC: inet/transportlayer/contract/sctp/SCTPCommand.msg
+MSGC: inet/transportlayer/contract/tcp/TCPCommand.msg
+MSGC: inet/transportlayer/contract/udp/UDPControlInfo.msg
+MSGC: inet/transportlayer/rtp/reports.msg
+MSGC: inet/transportlayer/rtp/RTCPPacket1.msg
+MSGC: inet/transportlayer/rtp/RTCPPacket2.msg
+MSGC: inet/transportlayer/rtp/RTCPPacket3.msg
+MSGC: inet/transportlayer/rtp/RTPInnerPacket.msg
+MSGC: inet/transportlayer/rtp/RTPInterfacePacket.msg
+MSGC: inet/transportlayer/rtp/RTPPacket.msg
+MSGC: inet/transportlayer/rtp/RTPParticipantInfo.msg
+MSGC: inet/transportlayer/rtp/RTPSenderControlMessage.msg
+MSGC: inet/transportlayer/rtp/RTPSenderStatusMessage.msg
+MSGC: inet/transportlayer/rtp/profiles/avprofile/RTPMpegPacket.msg
+MSGC: inet/transportlayer/sctp/SCTPMessage.msg
+MSGC: inet/transportlayer/tcp/TCPConnection.msg
+MSGC: inet/transportlayer/tcp_common/TCPSegment.msg
+MSGC: inet/transportlayer/udp/UDPPacket.msg
+inet/applications/dhcp/DHCPClient.cc
+inet/applications/dhcp/DHCPServer.cc
+inet/applications/base/ApplicationBase.cc
+inet/applications/ethernet/EtherAppSrv.cc
+inet/applications/ethernet/EtherAppCli.cc
+inet/applications/ethernet/EthernetApplication.cc
+inet/applications/ethernet/EtherTrafGen.cc
+inet/applications/generic/IPvXTrafGen.cc
+inet/applications/generic/IPvXTrafSink.cc
+inet/applications/httptools/browser/HttpBrowser.cc
+inet/applications/httptools/browser/HttpBrowserBase.cc
+inet/applications/httptools/browser/HttpBrowserDirect.cc
+inet/applications/httptools/common/HttpNodeBase.cc
+inet/applications/httptools/common/HttpRandom.cc
+inet/applications/httptools/common/HttpUtils.cc
+inet/applications/httptools/configurator/HttpController.cc
+inet/applications/httptools/server/HttpServer.cc
+inet/applications/httptools/server/HttpServerBase.cc
+inet/applications/httptools/server/HttpServerDirect.cc
+inet/applications/httptools/server/HttpServerDirectEvilA.cc
+inet/applications/httptools/server/HttpServerDirectEvilB.cc
+inet/applications/httptools/server/HttpServerEvilA.cc
+inet/applications/httptools/server/HttpServerEvilB.cc
+inet/applications/netperfmeter/NetPerfMeter.cc
+inet/applications/packetdrill/lexer.cc
+inet/applications/packetdrill/PacketDrill.cc
+inet/applications/packetdrill/PacketDrillApp.cc
+lexer.cc: In function ‘int yy_get_next_buffer()’:
+lexer.cc:2697:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+inet/applications/packetdrill/PacketDrillUtils.cc
+inet/applications/packetdrill/parser.cc
+inet/applications/packetdrill/PacketDrillApp.cc: In member function ‘bool inet::PacketDrillApp::compareTcpPacket(inet::tcp::TCPSegment*, inet::tcp::TCPSegment*)’:
+inet/applications/packetdrill/PacketDrillApp.cc:1648:24: warning: variable ‘liveOption’ set but not used [-Wunused-but-set-variable]
+             TCPOption *liveOption;
+                        ^
+inet/applications/pingapp/PingApp.cc
+inet/applications/rtpapp/RTPApplication.cc
+inet/applications/sctpapp/SCTPClient.cc
+inet/applications/sctpapp/SCTPNatPeer.cc
+inet/applications/sctpapp/SCTPNatServer.cc
+inet/applications/sctpapp/SCTPPeer.cc
+inet/applications/sctpapp/SCTPServer.cc
+inet/applications/tcpapp/TCPAppBase.cc
+inet/applications/tcpapp/TCPBasicClientApp.cc
+inet/applications/tcpapp/TCPEchoApp.cc
+inet/applications/tcpapp/TCPGenericSrvApp.cc
+inet/applications/tcpapp/TCPGenericSrvThread.cc
+inet/applications/tcpapp/TCPSinkApp.cc
+inet/applications/tcpapp/TCPSessionApp.cc
+inet/applications/tcpapp/TCPSrvHostApp.cc
+inet/applications/tcpapp/TelnetApp.cc
+inet/applications/tunapp/TunLoopbackApp.cc
+inet/applications/udpapp/UDPBasicApp.cc
+inet/applications/udpapp/UDPBasicBurst.cc
+inet/applications/udpapp/UDPEchoApp.cc
+inet/applications/udpapp/UDPSink.cc
+inet/applications/udpapp/UDPVideoStreamCli.cc
+inet/applications/udpapp/UDPVideoStreamSvr.cc
+inet/applications/voip/SimpleVoIPReceiver.cc
+inet/applications/voip/SimpleVoIPSender.cc
+inet/common/BitVector.cc
+inet/common/ByteArray.cc
+inet/common/ByteArrayBuffer.cc
+inet/common/Compat.cc
+inet/common/INETUtils.cc
+inet/common/InitStages.cc
+inet/common/int128.cc
+inet/common/IntervalTree.cc
+inet/common/LayeredProtocolBase.cc
+inet/common/Macho.cc
+inet/common/MatchableObject.cc
+inet/common/ModuleAccess.cc
+inet/common/NedFunctions.cc
+inet/common/NotifierConsts.cc
+inet/common/OSGUtils.cc
+inet/common/OSGScene.cc
+inet/common/PatternMatcher.cc
+inet/common/ProtocolMap.cc
+inet/common/RawPacket.cc
+inet/common/ReassemblyBuffer.cc
+inet/common/ResultFilters.cc
+inet/common/ResultRecorders.cc
+inet/common/ShortBitVector.cc
+inet/common/TLVOption.cc
+inet/common/Topology.cc
+inet/common/XMLUtils.cc
+inet/common/figures/BarFigure.cc
+inet/common/figures/BoxedLabelFigure.cc
+inet/common/figures/CounterFigure.cc
+inet/common/figures/CounterFigure.cc: In member function ‘void CounterFigure::setDecimalPlaces(int)’:
+inet/common/figures/CounterFigure.cc:76:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (digits.size() != number) {
+                       ^
+inet/common/figures/CounterFigure.cc:77:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (digits.size() > number)
+                           ^
+inet/common/figures/CounterFigure.cc:86:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (digits.size() < number) {
+                                  ^
+inet/common/figures/CounterFigure.cc: In member function ‘void CounterFigure::layout()’:
+inet/common/figures/CounterFigure.cc:395:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < digits.size(); ++i) {
+                       ^
+inet/common/figures/cPanelFigure.cc
+inet/common/figures/DelegateSignalConfigurator.cc
+inet/common/figures/FigureRecorder.cc
+inet/common/figures/GaugeFigure.cc
+inet/common/figures/HeatMapFigure.cc
+inet/common/figures/GaugeFigure.cc: In destructor ‘virtual GaugeFigure::~GaugeFigure()’:
+inet/common/figures/GaugeFigure.cc:66:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = curvesOnCanvas; i < curveFigures.size(); ++i)
+                                    ^
+inet/common/figures/GaugeFigure.cc:69:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = numTicks; i < tickFigures.size(); ++i) {
+                              ^
+inet/common/figures/GaugeFigure.cc: In member function ‘void GaugeFigure::redrawTicks()’:
+inet/common/figures/GaugeFigure.cc:401:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > tickFigures.size())
+                  ^
+inet/common/figures/GaugeFigure.cc:402:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > tickFigures.size()) {
+                         ^
+inet/common/figures/GaugeFigure.cc: In member function ‘void GaugeFigure::redrawCurves()’:
+inet/common/figures/GaugeFigure.cc:451:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (index == curveFigures.size()) {
+                       ^
+inet/common/figures/GaugeFigure.cc:466:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (index == curveFigures.size()) {
+                   ^
+inet/common/figures/IndexedImageFigure.cc
+inet/common/figures/IndicatorLabelFigure.cc
+inet/common/figures/IndicatorTextFigure.cc
+inet/common/figures/InstrumentUtil.cc
+inet/common/figures/LabeledIconFigure.cc
+inet/common/figures/LabeledLineFigure.cc
+inet/common/figures/LabeledPolylineFigure.cc
+inet/common/figures/LinearGaugeFigure.cc
+inet/common/figures/LinearGaugeFigure.cc: In destructor ‘virtual LinearGaugeFigure::~LinearGaugeFigure()’:
+inet/common/figures/LinearGaugeFigure.cc:63:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = numTicks; i < tickFigures.size(); ++i) {
+                              ^
+inet/common/figures/LinearGaugeFigure.cc: In member function ‘void LinearGaugeFigure::redrawTicks()’:
+inet/common/figures/LinearGaugeFigure.cc:336:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > tickFigures.size())
+                  ^
+inet/common/figures/LinearGaugeFigure.cc:337:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > tickFigures.size()) {
+                         ^
+inet/common/figures/PlotFigure.cc
+inet/common/figures/PlotFigure.cc: In member function ‘void PlotFigure::redrawValueTicks()’:
+inet/common/figures/PlotFigure.cc:305:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > valueTicks.size())
+                  ^
+inet/common/figures/PlotFigure.cc:306:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > valueTicks.size()) {
+                         ^
+inet/common/figures/PlotFigure.cc:329:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < valueTicks.size(); ++i) {
+                       ^
+inet/common/figures/PlotFigure.cc: In member function ‘void PlotFigure::redrawTimeTicks()’:
+inet/common/figures/PlotFigure.cc:372:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTimeTicks > timeTicks.size())
+                      ^
+inet/common/figures/PlotFigure.cc:373:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTimeTicks > timeTicks.size()) {
+                             ^
+inet/common/figures/PlotFigure.cc:396:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < timeTicks.size(); ++i) {
+                       ^
+inet/common/figures/ProgressMeterFigure.cc
+inet/common/figures/QueueFigure.cc
+inet/common/figures/QueueFigure.cc: In member function ‘void inet::QueueFigure::setElementCount(int)’:
+inet/common/figures/QueueFigure.cc:73:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < boxes.size(); i++)
+                               ^
+inet/common/figures/QueueFigure.cc:74:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 boxes[i]->setVisible((boxes.size() - i) <= elementCount);
+                                                         ^
+inet/common/figures/SignalFigure.cc
+inet/common/figures/ThermometerFigure.cc
+inet/common/figures/SignalFigure.cc: In member function ‘void inet::SignalFigure::refresh()’:
+inet/common/figures/SignalFigure.cc:61:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < rings.size(); i++) {
+                       ^
+inet/common/figures/SignalFigure.cc:63:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         bool isLast = i == rings.size() - 1;
+                         ^
+inet/common/figures/SignalFigure.cc:76:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < waves.size(); i++) {
+                       ^
+inet/common/figures/SignalFigure.cc:78:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         bool isLast = i == waves.size() - 1;
+                         ^
+inet/common/figures/SignalFigure.cc:86:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < rings.size(); i++)
+                       ^
+inet/common/figures/SignalFigure.cc:88:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < waves.size(); i++)
+                       ^
+inet/common/figures/ThermometerFigure.cc: In destructor ‘virtual ThermometerFigure::~ThermometerFigure()’:
+inet/common/figures/ThermometerFigure.cc:58:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = numTicks; i < tickFigures.size(); ++i) {
+                              ^
+inet/common/figures/ThermometerFigure.cc: In member function ‘void ThermometerFigure::redrawTicks()’:
+inet/common/figures/ThermometerFigure.cc:349:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > tickFigures.size()) {
+                  ^
+inet/common/figures/ThermometerFigure.cc:350:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > tickFigures.size()) {
+                         ^
+inet/common/figures/TrailFigure.cc
+inet/common/geometry/base/GeometricObjectBase.cc
+inet/common/geometry/base/ShapeBase.cc
+inet/common/geometry/common/CanvasProjection.cc
+inet/common/geometry/common/Coord.cc
+inet/common/geometry/common/CoordinateSystem.cc
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+make: *** [all] Error 2
+Makefile:6: recipe for target 'all' failed
+10:13:51 **** Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:14:32 **** Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/Rotation.cc
+inet/common/geometry/common/EulerAngles.cc
+inet/common/geometry/common/Quaternion.cc
+inet/common/geometry/common/CoordinateSystem.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+10:14:56 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:15:27 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/container/BVHTree.cc
+inet/common/geometry/container/QuadTree.cc
+inet/common/geometry/container/SpatialGrid.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+10:19:21 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:19:40 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/object/Box.cc
+inet/common/geometry/object/LineSegment.cc
+inet/common/geometry/object/Plane.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+make: *** [all] Error 2
+Makefile:6: recipe for target 'all' failed
+10:23:30 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:23:53 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/object/Polygon.cc
+inet/common/geometry/shape/Cuboid.cc
+inet/common/geometry/shape/Prism.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+10:24:45 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:24:49 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/shape/Sphere.cc
+inet/common/geometry/shape/polyhedron/PolyhedronEdge.cc
+inet/common/geometry/shape/polyhedron/Polyhedron.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+make: *** [all] Error 2
+Makefile:6: recipe for target 'all' failed
+10:34:04 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:34:21 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/shape/polyhedron/PolyhedronFace.cc
+inet/common/lifecycle/InterfaceOperations.cc
+inet/common/geometry/shape/polyhedron/PolyhedronPoint.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+compilation terminated.
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+10:55:40 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:55:43 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/applications/base/ApplicationBase.cc
+inet/applications/dhcp/DHCPClient.cc
+inet/applications/dhcp/DHCPServer.cc
+inet/applications/ethernet/EtherAppCli.cc
+inet/applications/ethernet/EtherAppSrv.cc
+inet/applications/ethernet/EthernetApplication.cc
+inet/applications/ethernet/EtherTrafGen.cc
+inet/applications/httptools/browser/HttpBrowser.cc
+inet/applications/generic/IPvXTrafGen.cc
+inet/applications/generic/IPvXTrafSink.cc
+inet/applications/httptools/browser/HttpBrowserBase.cc
+inet/applications/httptools/browser/HttpBrowserDirect.cc
+inet/applications/httptools/common/HttpNodeBase.cc
+inet/applications/httptools/common/HttpRandom.cc
+inet/applications/httptools/configurator/HttpController.cc
+inet/applications/httptools/server/HttpServer.cc
+inet/applications/httptools/server/HttpServerBase.cc
+inet/applications/httptools/server/HttpServerDirect.cc
+inet/applications/httptools/server/HttpServerDirectEvilA.cc
+inet/applications/httptools/server/HttpServerDirectEvilB.cc
+inet/applications/httptools/server/HttpServerEvilA.cc
+inet/applications/httptools/server/HttpServerEvilB.cc
+inet/applications/netperfmeter/NetPerfMeter.cc
+inet/applications/packetdrill/lexer.cc
+inet/applications/packetdrill/PacketDrill.cc
+inet/applications/packetdrill/PacketDrillApp.cc
+lexer.cc: In function ‘int yy_get_next_buffer()’:
+lexer.cc:2697:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+inet/applications/packetdrill/PacketDrillUtils.cc
+inet/applications/packetdrill/PacketDrillApp.cc: In member function ‘bool inet::PacketDrillApp::compareTcpPacket(inet::tcp::TCPSegment*, inet::tcp::TCPSegment*)’:
+inet/applications/packetdrill/PacketDrillApp.cc:1648:24: warning: variable ‘liveOption’ set but not used [-Wunused-but-set-variable]
+             TCPOption *liveOption;
+                        ^
+inet/applications/packetdrill/parser.cc
+inet/applications/pingapp/PingApp.cc
+inet/applications/rtpapp/RTPApplication.cc
+inet/applications/sctpapp/SCTPClient.cc
+inet/applications/sctpapp/SCTPNatPeer.cc
+inet/applications/sctpapp/SCTPNatServer.cc
+inet/applications/sctpapp/SCTPPeer.cc
+inet/applications/sctpapp/SCTPServer.cc
+inet/applications/tcpapp/TCPAppBase.cc
+inet/applications/tcpapp/TCPBasicClientApp.cc
+inet/applications/tcpapp/TCPEchoApp.cc
+inet/applications/tcpapp/TCPGenericSrvApp.cc
+inet/applications/tcpapp/TCPGenericSrvThread.cc
+inet/applications/tcpapp/TCPSessionApp.cc
+inet/applications/tcpapp/TCPSinkApp.cc
+inet/applications/tcpapp/TCPSrvHostApp.cc
+inet/applications/tcpapp/TelnetApp.cc
+inet/applications/tunapp/TunLoopbackApp.cc
+inet/applications/udpapp/UDPBasicApp.cc
+inet/applications/udpapp/UDPBasicBurst.cc
+inet/applications/udpapp/UDPEchoApp.cc
+inet/applications/udpapp/UDPSink.cc
+inet/applications/udpapp/UDPVideoStreamCli.cc
+inet/applications/udpapp/UDPVideoStreamSvr.cc
+inet/applications/voip/SimpleVoIPReceiver.cc
+inet/applications/voip/SimpleVoIPSender.cc
+inet/common/BitVector.cc
+inet/common/ByteArray.cc
+inet/common/ByteArrayBuffer.cc
+inet/common/INETUtils.cc
+inet/common/InitStages.cc
+inet/common/int128.cc
+inet/common/IntervalTree.cc
+inet/common/LayeredProtocolBase.cc
+inet/common/MatchableObject.cc
+inet/common/ModuleAccess.cc
+inet/common/NedFunctions.cc
+inet/common/NotifierConsts.cc
+inet/common/OSGScene.cc
+inet/common/OSGUtils.cc
+inet/common/PatternMatcher.cc
+inet/common/ProtocolMap.cc
+inet/common/RawPacket.cc
+inet/common/ReassemblyBuffer.cc
+inet/common/ResultFilters.cc
+inet/common/ResultRecorders.cc
+inet/common/ShortBitVector.cc
+inet/common/TLVOption.cc
+inet/common/Topology.cc
+inet/common/XMLUtils.cc
+inet/common/figures/BarFigure.cc
+inet/common/figures/BoxedLabelFigure.cc
+inet/common/figures/CounterFigure.cc
+inet/common/figures/CounterFigure.cc: In member function ‘void CounterFigure::setDecimalPlaces(int)’:
+inet/common/figures/CounterFigure.cc:76:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (digits.size() != number) {
+                       ^
+inet/common/figures/CounterFigure.cc:77:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (digits.size() > number)
+                           ^
+inet/common/figures/CounterFigure.cc:86:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (digits.size() < number) {
+                                  ^
+inet/common/figures/CounterFigure.cc: In member function ‘void CounterFigure::layout()’:
+inet/common/figures/CounterFigure.cc:395:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < digits.size(); ++i) {
+                       ^
+inet/common/figures/cPanelFigure.cc
+inet/common/figures/DelegateSignalConfigurator.cc
+inet/common/figures/FigureRecorder.cc
+inet/common/figures/GaugeFigure.cc
+inet/common/figures/HeatMapFigure.cc
+inet/common/figures/GaugeFigure.cc: In destructor ‘virtual GaugeFigure::~GaugeFigure()’:
+inet/common/figures/GaugeFigure.cc:66:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = curvesOnCanvas; i < curveFigures.size(); ++i)
+                                    ^
+inet/common/figures/GaugeFigure.cc:69:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = numTicks; i < tickFigures.size(); ++i) {
+                              ^
+inet/common/figures/GaugeFigure.cc: In member function ‘void GaugeFigure::redrawTicks()’:
+inet/common/figures/GaugeFigure.cc:401:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > tickFigures.size())
+                  ^
+inet/common/figures/GaugeFigure.cc:402:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > tickFigures.size()) {
+                         ^
+inet/common/figures/GaugeFigure.cc: In member function ‘void GaugeFigure::redrawCurves()’:
+inet/common/figures/GaugeFigure.cc:451:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (index == curveFigures.size()) {
+                       ^
+inet/common/figures/GaugeFigure.cc:466:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (index == curveFigures.size()) {
+                   ^
+inet/common/figures/IndexedImageFigure.cc
+inet/common/figures/IndicatorLabelFigure.cc
+inet/common/figures/IndicatorTextFigure.cc
+inet/common/figures/LabeledIconFigure.cc
+inet/common/figures/LabeledLineFigure.cc
+inet/common/figures/LabeledPolylineFigure.cc
+inet/common/figures/LinearGaugeFigure.cc
+inet/common/figures/LinearGaugeFigure.cc: In destructor ‘virtual LinearGaugeFigure::~LinearGaugeFigure()’:
+inet/common/figures/LinearGaugeFigure.cc:63:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = numTicks; i < tickFigures.size(); ++i) {
+                              ^
+inet/common/figures/LinearGaugeFigure.cc: In member function ‘void LinearGaugeFigure::redrawTicks()’:
+inet/common/figures/LinearGaugeFigure.cc:336:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > tickFigures.size())
+                  ^
+inet/common/figures/LinearGaugeFigure.cc:337:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > tickFigures.size()) {
+                         ^
+inet/common/figures/PlotFigure.cc
+inet/common/figures/PlotFigure.cc: In member function ‘void PlotFigure::redrawValueTicks()’:
+inet/common/figures/PlotFigure.cc:305:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > valueTicks.size())
+                  ^
+inet/common/figures/PlotFigure.cc:306:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > valueTicks.size()) {
+                         ^
+inet/common/figures/PlotFigure.cc:329:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < valueTicks.size(); ++i) {
+                       ^
+inet/common/figures/PlotFigure.cc: In member function ‘void PlotFigure::redrawTimeTicks()’:
+inet/common/figures/PlotFigure.cc:372:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTimeTicks > timeTicks.size())
+                      ^
+inet/common/figures/PlotFigure.cc:373:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTimeTicks > timeTicks.size()) {
+                             ^
+inet/common/figures/PlotFigure.cc:396:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < timeTicks.size(); ++i) {
+                       ^
+inet/common/figures/ProgressMeterFigure.cc
+inet/common/figures/QueueFigure.cc
+inet/common/figures/QueueFigure.cc: In member function ‘void inet::QueueFigure::setElementCount(int)’:
+inet/common/figures/QueueFigure.cc:73:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < boxes.size(); i++)
+                               ^
+inet/common/figures/QueueFigure.cc:74:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 boxes[i]->setVisible((boxes.size() - i) <= elementCount);
+                                                         ^
+inet/common/figures/SignalFigure.cc
+inet/common/figures/SignalFigure.cc: In member function ‘void inet::SignalFigure::refresh()’:
+inet/common/figures/SignalFigure.cc:61:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < rings.size(); i++) {
+                       ^
+inet/common/figures/SignalFigure.cc:63:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         bool isLast = i == rings.size() - 1;
+                         ^
+inet/common/figures/SignalFigure.cc:76:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < waves.size(); i++) {
+                       ^
+inet/common/figures/SignalFigure.cc:78:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         bool isLast = i == waves.size() - 1;
+                         ^
+inet/common/figures/SignalFigure.cc:86:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < rings.size(); i++)
+                       ^
+inet/common/figures/SignalFigure.cc:88:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < waves.size(); i++)
+                       ^
+inet/common/figures/ThermometerFigure.cc
+inet/common/figures/TrailFigure.cc
+inet/common/figures/ThermometerFigure.cc: In destructor ‘virtual ThermometerFigure::~ThermometerFigure()’:
+inet/common/figures/ThermometerFigure.cc:58:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = numTicks; i < tickFigures.size(); ++i) {
+                              ^
+inet/common/figures/ThermometerFigure.cc: In member function ‘void ThermometerFigure::redrawTicks()’:
+inet/common/figures/ThermometerFigure.cc:349:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (numTicks > tickFigures.size()) {
+                  ^
+inet/common/figures/ThermometerFigure.cc:350:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (numTicks > tickFigures.size()) {
+                         ^
+inet/common/geometry/base/GeometricObjectBase.cc
+inet/common/geometry/base/ShapeBase.cc
+inet/common/geometry/common/CanvasProjection.cc
+inet/common/geometry/common/Coord.cc
+inet/common/geometry/common/CoordinateSystem.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+10:31:08 **** Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:31:22 **** Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/EulerAngles.cc
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/common/Quaternion.cc
+inet/common/geometry/common/Rotation.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+20:04:28 **** Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+20:04:32 **** Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/container/BVHTree.cc
+inet/common/geometry/container/QuadTree.cc
+inet/common/geometry/container/SpatialGrid.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+20:04:47 **** Build of configuration debug for project tictoe ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoe_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoe_dbg] Error 1
+Makefile:93: recipe for target 'out/gcc-debug//tictoe_dbg' failed
+20:04:51 **** Build of configuration debug for project tictoe1 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoe1_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoe1_dbg' failed
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoe1_dbg] Error 1
+20:04:54 **** Build of configuration debug for project tictoe2 ****
+make MODE=debug all 
+txc2.cc
+In file included from /home/priyank/omnetpp-5.2/include/omnetpp/cobject.h:26:0,
+                 from /home/priyank/omnetpp-5.2/include/omnetpp/cnamedobject.h:23,
+                 from /home/priyank/omnetpp-5.2/include/omnetpp/cownedobject.h:23,
+                 from /home/priyank/omnetpp-5.2/include/omnetpp/carray.h:19,
+                 from /home/priyank/omnetpp-5.2/include/omnetpp.h:28,
+                 from txc2.cc:2:
+txc2.cc: In function ‘omnetpp::cObject* __factoryfunc_12()’:
+txc2.cc:12:15: error: ‘Txc1’ does not name a type
+ Define_Module(Txc1);
+               ^
+txc2.cc: In function ‘void* __castfunc_12(omnetpp::cObject*)’:
+txc2.cc:12:15: error: ‘Txc1’ does not name a type
+ Define_Module(Txc1);
+               ^
+txc2.cc:12:1: error: expected ‘>’ before ‘*’ token
+ Define_Module(Txc1);
+ ^
+txc2.cc:12:1: error: expected ‘(’ before ‘*’ token
+txc2.cc:12:1: error: expected primary-expression before ‘>’ token
+ Define_Module(Txc1);
+ ^
+txc2.cc:12:1: error: expected ‘)’ before ‘;’ token
+ Define_Module(Txc1);
+ ^
+In file included from /home/priyank/omnetpp-5.2/include/omnetpp/globals.h:21:0,
+                 from /home/priyank/omnetpp-5.2/include/omnetpp/cobjectfactory.h:20,
+                 from /home/priyank/omnetpp-5.2/include/omnetpp.h:30,
+                 from txc2.cc:2:
+txc2.cc: In function ‘void {anonymous}::__onstartup_func_12()’:
+txc2.cc:12:15: error: ‘Txc1’ was not declared in this scope
+ Define_Module(Txc1);
+               ^
+make: *** [out/gcc-debug//txc2.o] Error 1
+Makefile:102: recipe for target 'out/gcc-debug//txc2.o' failed
+10:16:48 **** Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:20:03 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:20:51 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:22:19 **** Incremental Build of configuration debug for project tictoc3 ****
+make MODE=debug all 
+txc1.cc
+Creating executable: out/gcc-debug//tictoc3_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoc3_dbg' failed
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoc3_dbg] Error 1
+10:38:19 **** Incremental Build of configuration debug for project tictoc3 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoc3_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoc3_dbg' failed
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoc3_dbg] Error 1
+10:39:01 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+Creating executable: out/gcc-release//tictoc3
+10:39:34 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:40:23 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:38:30 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:38:54 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+14:53:53 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+14:58:30 **** Incremental Build of configuration release for project tictoe2 ****
+make MODE=release all 
+txc2.cc
+Creating executable: out/gcc-release//tictoe2
+14:59:14 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:00:49 **** Incremental Build of configuration debug for project tictoc3 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoc3_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoc3_dbg' failed
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoc3_dbg] Error 1
+15:02:26 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:02:33 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/object/Box.cc
+inet/common/geometry/object/Plane.cc
+inet/common/geometry/object/LineSegment.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+15:02:48 **** Incremental Build of configuration debug for project tictoc3 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoc3_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoc3_dbg' failed
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoc3_dbg] Error 1
+15:02:51 **** Incremental Build of configuration debug for project tictoe1 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoe1_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoe1_dbg' failed
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoe1_dbg] Error 1
+15:02:52 **** Incremental Build of configuration release for project tictoe2 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:04:17 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:04:25 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug -j4 all 
+cd src && make
+make[1]: Entering directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+*** COMPILING with:
+g++ -c -std=c++11 -g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=none -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSGEARTH -Wno-overloaded-virtual -include inet/common/precompiled_debug.h  -DINET_EXPORT -I. -I/home/priyank/omnetpp-5.2/include
+*** LINKING with:
+g++ -shared -fPIC -o ../out/gcc-debug/src/libINET_dbg.so -Wl,--no-as-needed -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir_dbg -loppsim_dbg -ldl -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,/home/priyank/omnetpp-5.2/lib -Wl,-rpath,/lib -Wl,-rpath,.  -L/home/priyank/omnetpp-5.2/lib
+Building...
+inet/common/geometry/common/CoordinateSystem.cc
+inet/common/geometry/object/Polygon.cc
+inet/common/geometry/shape/Cuboid.cc
+inet/common/geometry/shape/Prism.cc
+In file included from inet/common/geometry/common/CoordinateSystem.cc:18:0:
+./inet/common/geometry/common/CoordinateSystem.h:25:28: fatal error: osgEarth/MapNode: No such file or directory
+compilation terminated.
+Makefile:1321: recipe for target '../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o' failed
+make[1]: *** [../out/gcc-debug/src/inet/common/geometry/common/CoordinateSystem.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/priyank/omnetpp-5.2/samples/inet/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+15:04:34 **** Incremental Build of configuration debug for project tictoc3 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoc3_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoc3_dbg' failed
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoc3_dbg] Error 1
+15:04:37 **** Incremental Build of configuration debug for project tictoe1 ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoe1_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+Makefile:93: recipe for target 'out/gcc-debug//tictoe1_dbg' failed
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoe1_dbg] Error 1
+15:04:37 **** Incremental Build of configuration release for project tictoe2 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:06:19 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:06:49 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:07:14 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:16:45 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:20:17 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:27:26 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:28:52 **** Incremental Build of configuration release for project tictoe2 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:29:07 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:34:34 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:35:40 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:35:53 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:36:01 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+21:36:23 **** Incremental Build of configuration release for project tictoc3 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.

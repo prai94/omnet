@@ -1,0 +1,13 @@
+20:04:47 **** Build of configuration debug for project tictoe ****
+make MODE=debug all 
+Creating executable: out/gcc-debug//tictoe_dbg
+/usr/bin/ld: cannot find -loppmain_dbg
+/usr/bin/ld: cannot find -loppcmdenv_dbg
+/usr/bin/ld: cannot find -loppenvir_dbg
+/usr/bin/ld: cannot find -loppsim_dbg
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-debug//tictoe_dbg] Error 1
+Makefile:93: recipe for target 'out/gcc-debug//tictoe_dbg' failed
+
+20:04:49 Build Finished (took 1s.890ms)
+
